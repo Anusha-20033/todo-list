@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+    *{
+        margin:'0px';
+        padding:'0px';
+    }
+    .container{
+        height:100vh;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        gap:10px;
+    }
+    button{
+        padding:8px;
+        background-color:green;
+        color:white;
+        border:none;
+
+    }
+    li{
+        margin-top:10px;
+        list-style:none;
+        padding:8px;
+        background:#eee;
+        display:flex;
+        justify-content: space-between;;
+
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <center>
+        <h2>MY TO-DO LIST</h2>
+        <input type="text" id="taskInput">
+        <button onclick="addTask()"> Add </button>
+        <ol id="taskList"></ol>
+        </center>
+    </div>
+    <script src="todo_list.js"></script>
+</body>
+</html>
